@@ -1303,3 +1303,6 @@ em.search-keyword {
   font-weight: bold;
   font-style: normal;
   color: #01579f; }
+
+#ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
+  height: 30px !important; }
