@@ -1306,3 +1306,6 @@ em.search-keyword {
 
 #ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
   height: 30px !important; }
+
+#ds-thread #ds-reset .ds-post-toolbar label {
+  margin-top: -3px !important; }

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyi5628.github.io/"/>
-  <updated>2016-04-03T11:06:15.000Z</updated>
+  <updated>2016-04-06T10:59:40.000Z</updated>
   <id>http://zhangyi5628.github.io/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最近面试遇到的一些js笔试题</title>
+    <link href="http://zhangyi5628.github.io/2016/04/06/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9Bjs%E7%AC%94%E8%AF%95%E9%A2%98/"/>
+    <id>http://zhangyi5628.github.io/2016/04/06/最近面试遇到的一些js笔试题/</id>
+    <published>2016-04-06T10:28:10.000Z</published>
+    <updated>2016-04-06T10:59:40.000Z</updated>
+    
+    <content type="html">&lt;p&gt;####1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&lt;br&gt;这道题有两种做法，&lt;br&gt;第一种方法是创建一个object，循环字符以字符为object的key，初始的value为1，循环的过程中，遇到同样的字符，就+1，最后得到的时类似于这样的对象：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a:&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    b:&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c: &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在对这个对象的每个key和value做排序。当然这种方法不好，要做几遍循环，比较消耗性能。  &lt;/p&gt;
+&lt;p&gt;第二种方法是循环字符，把字符串中相同的字母都替换为空，再用本次循环中最初的字符串长度减去替换后的字符串长度，就得到了本次循环的字符在字符串中的总数，而且每次循环都会吧相同的字符替换为空，循环需要的次数越来越少，能提高性能。代码如下：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; str =&lt;span class=&quot;string&quot;&gt;&quot;adadfdfseffserfefsefseeffffftsdg&quot;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//命名一个变量放置给出的字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; maxLength = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//命名一个变量放置字母出现的最高次数并初始化为0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; result = &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//命名一个变量放置结果输入  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( str != &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt; )&amp;#123; &lt;span class=&quot;comment&quot;&gt;//循环迭代开始，并判断字符串是否为空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    oldStr = str; &lt;span class=&quot;comment&quot;&gt;//将原始的字符串变量赋值给新变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    getStr = str.substr(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//用字符串的substr的方法得到第一个字符（首字母）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    str = str.replace(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;RegExp&lt;/span&gt;(getStr, &lt;span class=&quot;string&quot;&gt;&quot;g&quot;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( oldStr.length-str.length &amp;gt; maxLength ) &amp;#123; &lt;span class=&quot;comment&quot;&gt;//判断原始的字符串的长度减去替代后字符串长度是否大于之前出现的最大的字符串长度&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        maxLength = oldStr.length-str.length; &lt;span class=&quot;comment&quot;&gt;//两字符串长度相减得到最大的字符串长度&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        result = getStr + &lt;span class=&quot;string&quot;&gt;&quot;=&quot;&lt;/span&gt; + maxLength &lt;span class=&quot;comment&quot;&gt;//返回最大的字符串结果（字母、出现次数）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(result) &lt;span class=&quot;comment&quot;&gt;//弹出结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;####1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&lt;br&gt;这道题有两种做法，&lt;br&gt;第一种方法是创建一个object，循环字符以字符为object的key，初始的value为1，循环的过程中，遇到同样的字符，就+1
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://zhangyi5628.github.io/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://zhangyi5628.github.io/tags/javascript/"/>
+    
+      <category term="笔试题" scheme="http://zhangyi5628.github.io/tags/%E7%AC%94%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac OS X Yosemite 10.10下配置 Apache</title>
