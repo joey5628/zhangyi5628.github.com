@@ -36,3 +36,13 @@ while( str != '' ){ //循环迭代开始，并判断字符串是否为空
 
 alert(result) //弹出结果 
 ```
+#### 2、写出以下代码的输出结果：
+```js
+for(var i = 0; i < 5; i++){
+    setTimeout(function(){
+        console.log(i);
+    })
+}
+```
+setTimeout是异步的，所以setTimeout会在循环过后执行，此时i为5，所以会输出5遍5。
+
