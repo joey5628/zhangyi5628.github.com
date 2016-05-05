@@ -71,3 +71,7 @@ deploy:
   type: git
   repo: 
     github: git@github.com:zhangyi5628/zhangyi5628.github.com.git,master
+
+#plugins:
+# - hexo-generator-feed 	#此插件用于RSS订阅
+
