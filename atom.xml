@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyi5628.github.io/"/>
-  <updated>2016-07-29T08:20:54.000Z</updated>
+  <updated>2016-08-30T06:50:02.000Z</updated>
   <id>http://zhangyi5628.github.io/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个前端的自我修养</title>
+    <link href="http://zhangyi5628.github.io/2016/08/30/%E4%B8%80%E4%B8%AA%E5%89%8D%E7%AB%AF%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/"/>
+    <id>http://zhangyi5628.github.io/2016/08/30/一个前端的自我修养/</id>
+    <published>2016-08-30T05:45:38.000Z</published>
+    <updated>2016-08-30T06:50:02.000Z</updated>
+    
+    <content type="html">&lt;p&gt;转自：寒泉 [&lt;a href=&quot;http://kb.cnblogs.com/page/545784/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个前端的自我修养&lt;/a&gt;]&lt;br&gt;　　今天给大家分享的主题是前端的自我成长，这是一个关于成长的话题。&lt;br&gt;　　很多人都有这样的感觉：听了很多技术圈子的分享，有的有深度，有的循循善诱，深入浅出，但是呢，几年下来，到底哪些用上了，哪些对自己真的有帮助了?反而有些模糊。&lt;br&gt;　　2015 年我在不同的场合分享了很多内容：有移动端的性能、有适配、有 Web vs Native，也有 hybrid，但是其实我一直比较担心，真正有深度的内容，其实面向的是比较小众的群体，比如说 Hybrid，其实它在大部分公司里面，是只能用现成的。&lt;br&gt;　　所以我这一次尝试分享一个我认为可以帮助到所有前端的话题，关于前端的成长，如果说这个分享的内容，听众里面有那么几十个人拿到 BAT 的 offer，或者升职加薪，那么我觉得我就认为我取得了成功。&lt;br&gt;　　前端其实是个特别苦逼的职业，因为前端技术一直革命的特别快，新技术、新技巧在不断地被发明出来。之前我有一个朋友，他讲说他对自己的认知是了解前端、熟悉前端、精通前端、熟悉前端、不懂前端。为什么呢，他说当他觉得自己对前端所有的东西觉得无所不知，无所不能的时候，忽然看到了一段代码，他完全无法理解，于是整个世界就崩塌了，从此再也不敢说自己会前端。&lt;br&gt;　　我就跟他说，这里，缺少的是一种正确的方法，你觉得无所不知、无所不能的标准是什么，是工作中很久没遇到解决不了的问题么？他说还真是这样。我就又问他，那你系统学过前端么？他想了想，还真没学过，大学里不开这个课。的确如此，到目前为止，还没有任何一个大学会教前端，倒是有些培训班，会讲网页开发三剑客。&lt;br&gt;　　我这里讲的内容，希望带给大家的，就是该如何学习前端，实现自身成长。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1CPRlMXXXXXafaXXXXXXXXXXX-826-222.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　关于成长，首先我得发一个免责声明，不是我对我讲的内容没有信心，而是成长是自己的事，英文有句话，在外企工作的人会经常听到，叫做：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;You are the owner of your career.&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;　　你是你职业发展的责任人。这句话潜台词是，你（不是你老板，也不是你爸妈，也不是你女朋友）是你职业发展的责任人。&lt;br&gt;　　这句话我在我职业生涯的起点听说，一直指导我的职业发展，甚至在我带团队，培养团队的时候，也是中心的指导思想，之前我带的团队的同学，他们有不少人也在带团队，其实他们也在实践这句话，所以我这里，也把这句话、把这个道理分享给给大家。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1L5FfMXXXXXXaapXXXXXXXXXX-1501-789.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　我们讲前端成长，&lt;strong&gt;我认为，主要在两个方面，一部分是“能力”，一部分是“知识”&lt;/strong&gt;。我个人的观点，能力占百分之八十，知识占百分之二十。&lt;br&gt;　　从这个图上，大家可以看到，其实我们认为变化快的东西，最新出来的 Angular、React、ES2015，其实都在知识里面，知识又分成两部分，一部分我把它叫做标准，它是相对而言比较稳定的，很少会出现一个标准被推翻的事情。另一部分则是技术，像是 jQuery、React 这些框架啦，像是 MVC、FLUX 这些架构的东西，这些东西是由各个公司主导的，变化就非常快，你看 Grunt 发展了没多久，Gulp 就来挑战他了，然后又有 browserify、webpack 这些东西。&lt;br&gt;　　而我认为占重点的能力，则是非常稳定的，我认为能力是三大块：编程能力、架构能力、工程能力。&lt;br&gt;　　编程能力，就是用代码解决问题的能力，你编程能力越强，就能解决越复杂的问题，细分又有调试、算法、数据结构、OS 原理等这些的支撑，你才能解决各种麻烦的问题。&lt;br&gt;　　架构能力，则是解决代码规模的问题，当一个系统足够复杂，你会写每一块，能解决每一个问题，不等于你能搞定整个系统，这就需要架构能力，架构能力包含了一些意识，比如解耦、接口隔离，也包含认识业务建立抽象模型，也有一些常见的模式，比如经典的 MVC，还有设计层面，面向对象、设计模式等等。&lt;br&gt;　　最后工程能力，则是解决协作的问题，当系统规模更大，光靠一个人，是没办法完成的，如何保证几个高手互相能够配合好？如何保证项目里面水平最差的人不拖后腿？这个工程化建设，往往会跨越多个业务，以汇报关系上的团队为单位来做。包括前后端解耦，模块化，质量保证，代码风格，等等。&lt;br&gt;　　其实不难看出来，这三项，其实是有顺序的，低等级、小团队，编程能力一项就能应付，越资深的前端，越大的公司和团队，越是需要后面的技能，但是这里我要强调一点，其实资深前端，大团队，对能力的需求，是既要还要——不是说资深的前端，编程能力就可以变差。&lt;br&gt;　　社区总会有一些声音，对工程能力，对架构能力持有一种抵触的态度，觉得比较虚，觉得不需要。实际上以某些人所在的岗位来说，也没错，毕竟公司、团队的状态确实可能用不到，但是以个人成长的角度来看，就是大错特错。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1L9VmMXXXXXc0XVXXXXXXXXXX-1729-990.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　下面我们来具体讲讲，关于知识的学习。&lt;br&gt;　　对知识，我一直有个观点，叫做宁缺毋滥，这个图片上写了一句好前端才分对错，是的，其实很多人，他学习东西的时候就喜欢挑，挑简单的学，书选择最”深入浅出”的，在这种心态下，没有任何一丝学好的可能性，所以我对知识学习的目标，理解为亮点，一曰准确，二曰全面。当年学习一部分知识，如果你能做到这两点，那你将来在业务上做技术决策的时候，你面对面试官技术问题的时候，信心跟你只看过皮毛是完全不一样的。&lt;br&gt;　　怎么做到这两点呢？我想路子肯定有很多，而我的答案，我这里要分享的，是“建立自己的知识体系”。&lt;br&gt;　　如何建立自己的知识体系呢？我个人总结的经验，是下面几个步骤：&lt;/p&gt;
+&lt;h4 id=&quot;第一步，寻找线索。&quot;&gt;&lt;a href=&quot;#第一步，寻找线索。&quot; class=&quot;headerlink&quot; title=&quot;第一步，寻找线索。&quot;&gt;&lt;/a&gt;第一步，寻找线索。&lt;/h4&gt;&lt;p&gt;　　你要了解一个知识，比如我想学 Web 平台的 API 了，当然可以先找一本书，看看别人都写了什么，但是我不喜欢这么干。&lt;br&gt;　　我大学里，学前端的东西，为了找个 id 和 name 的区别，曾经要借十几本书来，对比着看，那个时候，是真的没人告诉我，什么书比较好。所以我对别人总结好的知识，第一反应是质疑，不信。&lt;br&gt;　　所以我比较推荐，找一些比较准确的，你可以确定它真的足够全面的资料当作线索。对 Web 平台的 API，我就用反射：&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1COtpMXXXXXbwXVXXXXXXXXXX-1224-924.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　浏览器里给出来的这个属性列表是不会骗人的，用这个东西作为线索，我就很有信心。&lt;br&gt;　　同样可能比较适合做的资料，还有一些标准文档的附录，和源代码里的结构定义。&lt;/p&gt;
+&lt;h4 id=&quot;第二步，是建立联系。&quot;&gt;&lt;a href=&quot;#第二步，是建立联系。&quot; class=&quot;headerlink&quot; title=&quot;第二步，是建立联系。&quot;&gt;&lt;/a&gt;第二步，是建立联系。&lt;/h4&gt;&lt;p&gt;　　比如说，看下面几个 DOM 属性：&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1_AJIMXXXXXXeXXXXXXXXXXXX-1202-352.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　这里，左边一列是操作 Node 的，右边一列是操作 Element 的，它就存在一定的对应关系。&lt;br&gt;　　一般来说，我们找对应关系的方式有以下几个依据：&lt;br&gt;　　美感&lt;br&gt;　　完备性&lt;br&gt;　　操作同一组数据&lt;br&gt;　　特别提一下，操作同一组数据，正是面向对象的核心概念，对前端而言，有点不一样的是，所有的 API，根都是 window，所以，其实大部分的 API，可以依据面向对象的数据和操作的观点进行划分。&lt;/p&gt;
+&lt;h4 id=&quot;第三步，是分类。&quot;&gt;&lt;a href=&quot;#第三步，是分类。&quot; class=&quot;headerlink&quot; title=&quot;第三步，是分类。&quot;&gt;&lt;/a&gt;第三步，是分类。&lt;/h4&gt;&lt;p&gt;　　这里我给出一个实际一些的例子，下图是我对 zepto(移动简化版jQuery)，的 API 分类&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/mt/TB1DbJqMXXXXXbBXVXXXXXXXXXX-800-1173.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　建立联系以后，我们依据知识之间的联系，进行分类，就可以得到一张图谱，在这个图里面，你就可以非常清楚地知道，哪些知识，是非常重要的，哪些，其实是可以互相替代的。&lt;br&gt;　　而一旦有你之前没见过的东西，你又能通过把它放到图谱里，来快速理解它，或者找出一些很好的替代方案。&lt;br&gt;　　比如说面试的时候，如果面试官问你 bind 和 unbind 怎么用，你还不会，这时候，如果你心里有这张图，你就不至于一脸懵了，你可以说，虽然我不知道 bind 和 unbind，但是我知道 live 和 die 啊，我又知道 on 和 off 啊。&lt;br&gt;　　这张图里我们就可以看出，collection 里面的东西，多半没什么用，而节点操作里，肯定就都很有用。&lt;br&gt;　　第四步，是追本溯源。&lt;br&gt;　　当我对一个知识体系的全貌有了概念以后，占了全面两个字，接下来需要确认它的准确性。很多知识，在社区，会有很多的争议，该相信谁呢，这是个问题。而我的答案，就是追本溯源，去找它最初的讨论和定义。&lt;br&gt;　　有一个真实的案例，就是闭包这个概念，曾经我们很多人的理解都是错的，把闭包和 scope 的概念给混淆起来，认为闭包是函数的执行环境上下文，但是有一个叫做 hax 的（很多人应该都认识他，哈哈），他就对此提出了质疑，认为闭包就是函数。于是我就去查证闭包的概念。&lt;br&gt;　　大家都知道，wiki 其实是不准确的，但是其中有一段，基本不会太有问题，就是历史。下图是 closure 这个词条的历史部分：&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1d1XsMXXXXXXBXVXXXXXXXXXX-2263-430.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　从这段历史里，我找到了一个名字， Peter J Landin，他是提出者，那么，我就去看看他到底是怎么说的，于是我去 google 学术搜索，找他的文章&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1lEdkMXXXXXXOaXXXXXXXXXXX-1388-551.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　果然找到了，于是我们看看原始的文件&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1S9XiMXXXXXaLaXXXXXXXXXXX-751-477.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　这个定义，对应到我们今天 JS 里的闭包，是稍微有点区别的，但是它毫无疑问，是包含了两个部分：环境部分和控制（代码）部分，所以其实，闭包就是对应着 JS 的函数，而之前，普遍的观点是认为闭包只包含环境。&lt;br&gt;　　所以这个追溯的过程，能够帮我们真正搞清楚对错。&lt;br&gt;　　除了 wiki-google 学术搜索的组合，还有一些邮件列表和 github 提交历史，也是非常适合去查证一些概念和技术的历史的。&lt;br&gt;　　最后说，我讲的这个建立知识体系的过程，是不断接受新知识，挑战、质疑原有的体系，推翻再重建，每一次循环，你的知识体系都变得更加坚固，更加强大。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1wVBmMXXXXXX0aXXXXXXXXXXX-975-767.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1KQhAMXXXXXXUXpXXXXXXXXXX-1732-973.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　下面分享的一部分，是关于能力培养。&lt;br&gt;　　能力培养其实重要性很高，但是其实说起来，内容却很少。只有两点: 教材、训练。&lt;br&gt;　　对知识学习，我是主张建立自己的体系，不要去相信书，但是对能力培养，我的观点就刚好相反，我觉得能力的体系，恰恰是难以自己建立的，需要教材去指导。这是由两者的复杂程度和变化速度决定的。&lt;br&gt;　　想培养能力，就要找经典的教材来学习，像算法导论，The C++ Programming Language这些经典，几十年都没有过时。&lt;br&gt;　　注意这里我用了教材，而不是书。&lt;br&gt;　　教材和书最大的区别，就是有没有习题。&lt;br&gt;　　在我看来，内容再难的书可以一星期读两本，但是教材一定不行，教材一定得花几个月的时间，一边读一边做习题。&lt;br&gt;　　于是谈到训练。&lt;br&gt;　　其实有个事实是，工作以后，只有极少数人仍然能够做到训练，比如我自己的编程能力，我自觉工作 7、8 年，几乎没有过进步。&lt;br&gt;　　训练应该是系统的（需要教材）、主动的，这两个特点不可或缺，有人会觉得，我真的工作很辛苦，每天都要加班，但是其实，任何被动的痛苦，都没法给人带来进步，你的痛苦倒是可能给老板带来更多收入。&lt;br&gt;　　如果面临困境，可以选择系统训练来提升自己，但是对大部分人来说，可能更乐于选择一个一个变通的办法：养成习惯，让工作变得更有挑战。&lt;br&gt;　　这个事情其实有不少理论，比较有名的是 Noel Tichy 提出的心理舒适区、学习区和恐慌区。选择一份对自己来说具有挑战性的工作，正面解决问题。&lt;br&gt;　　技术圈里流行一个笑话，说的是一个人，工作了三年，却只有一年的经验，因为后面两年都在重复第一年的工作。&lt;br&gt;　　所以我们要做的事，就是永远不重复劳动，当你觉得现在的工作，越来越舒适，越来越缺少风险的时候，就应该引起警惕了。&lt;br&gt;　　而虽然训练是个很困难的事情，其实大家也不必过于担忧，虽然到处都是“一万小时训练”的言论，现在各大公司的招聘门槛，在我看来应该都卡在几百小时训练的程度。所以我想说，一万小时太久，只争朝夕。希望看到大家成为更好的前端，做更好的自己。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转自：寒泉 [&lt;a href=&quot;http://kb.cnblogs.com/page/545784/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个前端的自我修养&lt;/a&gt;]&lt;br&gt;　　今天给大家分享的主题是前端的自我成长，这是一个关于成长的话题。&lt;br
+    
+    </summary>
+    
+      <category term="分享转载" scheme="http://zhangyi5628.github.io/categories/%E5%88%86%E4%BA%AB%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="转载" scheme="http://zhangyi5628.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web移动端开发调试方法</title>
+    <link href="http://zhangyi5628.github.io/2016/08/03/web%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E6%96%B9%E6%B3%95/"/>
+    <id>http://zhangyi5628.github.io/2016/08/03/web移动端开发调试方法/</id>
+    <published>2016-08-03T03:44:58.000Z</published>
+    <updated>2016-08-03T03:46:39.000Z</updated>
+    
+    <content type="html">&lt;p&gt;web移动端开发调试方法&lt;br&gt;&lt;a href=&quot;http://blog.devtang.com/2015/11/14/charles-introduction/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Charles 从入门到精通&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;web移动端开发调试方法&lt;br&gt;&lt;a href=&quot;http://blog.devtang.com/2015/11/14/charles-introduction/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Charles 从入门到精通&lt;/a&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="移动端开发" scheme="http://zhangyi5628.github.io/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="调试" scheme="http://zhangyi5628.github.io/tags/%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6 你可能不知道的事 - 基础篇</title>
