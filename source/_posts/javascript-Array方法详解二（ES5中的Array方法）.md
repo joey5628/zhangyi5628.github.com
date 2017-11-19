@@ -195,7 +195,7 @@ var data = [0, 1, 2, 3];
 var arrayFilter = data.filter(function(item) {
     return item;
 });
-console.log(arrayFilter); 
+console.log(arrayFilter);
 // [1, 2, 3]
 ```
 返回值只要是弱等于== true/false就可以了，而非非得返回 === true/false
@@ -233,7 +233,7 @@ if (!Array.prototype.filter) {
 ```js
 array.reduce(callback[, initialValue])
 ```
-reduce中callback函数接受4个参数：之前值、当前值、索引值以及数组本身。initialValue参数可选，表示初始值。若指定，则当作最初使用的previous值；如果缺省，则使用数组的第一个元素作为previous初始值，同时current往后排一位，相比有initialValue值少一次迭代。
+reduce中callback函数接受4个参数：之前值(上一次的处理结果 - 通过上一次调用回调函数获得的值)、当前值、索引值以及数组本身。initialValue参数可选，表示初始值。若指定，则当作最初使用的previous值；如果缺省，则使用数组的第一个元素作为previous初始值，同时current往后排一位，相比有initialValue值少一次迭代。
 ```js
 var sum = [1, 2, 3, 4].reduce(function (previous, current, index, array) {
   return previous + current;
