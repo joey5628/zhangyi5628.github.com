@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyi5628.github.io/"/>
-  <updated>2017-11-19T01:14:55.000Z</updated>
+  <updated>2017-11-24T13:31:27.000Z</updated>
   <id>http://zhangyi5628.github.io/</id>
   
   <author>
@@ -16,11 +16,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>iOS Safari 真机调试网页</title>
+    <link href="http://zhangyi5628.github.io/2017/11/24/iOS%20Safari%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E7%BD%91%E9%A1%B5/"/>
+    <id>http://zhangyi5628.github.io/2017/11/24/iOS Safari真机调试网页/</id>
+    <published>2017-11-24T13:29:15.000Z</published>
+    <updated>2017-11-24T13:31:27.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h4&gt;&lt;p&gt;平时开发移动端页面时，我们一般也都先选择再chrome上模拟手机浏览器来调试，这样很方便。但是有些时候电脑上运行的好好的，在手机上还是有出现莫名其妙的问题，让人捉不到头脑，这个时候如果能在真机上运行，在电脑上的浏览器中调试就再好不过了。  &lt;/p&gt;
+&lt;p&gt;对于iPhone来说，iOS5.0开始，可以通过Safari的Web Inspector工具连接设备对应用进行调试。&lt;/p&gt;
+&lt;h4 id=&quot;真机调试&quot;&gt;&lt;a href=&quot;#真机调试&quot; class=&quot;headerlink&quot; title=&quot;真机调试&quot;&gt;&lt;/a&gt;真机调试&lt;/h4&gt;&lt;h5 id=&quot;一、开启iOS设备的调试功能&quot;&gt;&lt;a href=&quot;#一、开启iOS设备的调试功能&quot; class=&quot;headerlink&quot; title=&quot;一、开启iOS设备的调试功能&quot;&gt;&lt;/a&gt;一、开启iOS设备的调试功能&lt;/h5&gt;&lt;p&gt;打开“设置 - Safari - 高级”页面，开启“Web检查器”  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://owtrjd7fu.bkt.clouddn.com/Safari%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95-iOS%E5%BC%80%E5%90%AF%E8%B0%83%E8%AF%95.jpeg&quot; width=&quot;330&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;其他手机上安装的需求调试的应用，打开对应的WebView页面或者是浏览器，并把手机连接到电脑。&lt;/p&gt;
+&lt;h5 id=&quot;二、开启Safari的调试功能&quot;&gt;&lt;a href=&quot;#二、开启Safari的调试功能&quot; class=&quot;headerlink&quot; title=&quot;二、开启Safari的调试功能&quot;&gt;&lt;/a&gt;二、开启Safari的调试功能&lt;/h5&gt;&lt;p&gt;运行Safari,点击Safari的“偏好设置”，切换到“高级”  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://owtrjd7fu.bkt.clouddn.com/Safari%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95-%E6%89%93%E5%BC%80%E5%BC%80%E5%8F%91%E8%8F%9C%E5%8D%95.jpg&quot; width=&quot;620&quot; alt=&quot;开启Safari的调试功能&quot; align=&quot;center&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;勾选“在菜单中显示‘开发’菜单”，关闭偏好设置，这是在Safari的工具栏上就能看到“开发”菜单。&lt;/p&gt;
+&lt;h5 id=&quot;三、连接真机&quot;&gt;&lt;a href=&quot;#三、连接真机&quot; class=&quot;headerlink&quot; title=&quot;三、连接真机&quot;&gt;&lt;/a&gt;三、连接真机&lt;/h5&gt;&lt;p&gt;点击“开发”这时能看到连接的设备，hover到对应的设备上，选择连接要调试的页面  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://owtrjd7fu.bkt.clouddn.com/Safari%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95-%E8%BF%9E%E6%8E%A5%E8%B0%83%E8%AF%95.jpg&quot; width=&quot;620&quot; alt=&quot;连接调试&quot; align=&quot;center&quot;&gt;  &lt;/p&gt;
+&lt;h4 id=&quot;四、调试&quot;&gt;&lt;a href=&quot;#四、调试&quot; class=&quot;headerlink&quot; title=&quot;四、调试&quot;&gt;&lt;/a&gt;四、调试&lt;/h4&gt;&lt;p&gt;打开Web Inspector界面后，即可调试JavaScript、检查HTML页面DOM结构、实时同步更新元素CSS样式、加断点调试等操作  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://owtrjd7fu.bkt.clouddn.com/Safari%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95-%E8%B0%83%E8%AF%95.jpg&quot; width=&quot;620&quot; alt=&quot;调试&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
+&lt;p&gt;很 easy!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h4&gt;&lt;p&gt;平时开发移动端页面时，我们一般也都先选择再chrome上模拟手机浏览器来调试，这样很方便。但是有些时候电脑上运行的好好的，在手机上还是有出现
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Safari active伪类失效问题</title>
     <link href="http://zhangyi5628.github.io/2016/10/28/active%E4%BC%AA%E7%B1%BB%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/"/>
     <id>http://zhangyi5628.github.io/2016/10/28/active伪类失效问题/</id>
     <published>2016-10-28T01:13:55.000Z</published>
-    <updated>2017-11-19T01:14:55.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;最近在做移动端项目时，发现通过伪类:active给按钮添加点击效果时，iOS下无效，PC下是正常的。&lt;/p&gt;
 &lt;h3 id=&quot;1-失效原因&quot;&gt;&lt;a href=&quot;#1-失效原因&quot; class=&quot;headerlink&quot; title=&quot;1.失效原因&quot;&gt;&lt;/a&gt;1.失效原因&lt;/h3&gt;&lt;p&gt;我们可以从Safari Developer Library中找到答案,描述如下:&lt;/p&gt;
@@ -48,7 +79,7 @@
     <link href="http://zhangyi5628.github.io/2016/10/19/%E4%BF%AE%E5%A4%8D%E6%89%93%E5%BC%80%E5%BC%B9%E7%AA%97%E5%90%8E%E8%A7%A6%E6%91%B8%E5%B1%8F%E5%B9%95%E6%9C%89%E8%A6%86%E7%9B%96%E9%AB%98%E4%BA%AE%E9%A2%9C%E8%89%B2%E9%97%AE%E9%A2%98%EF%BC%88-webkit-tap-highlight-color%EF%BC%89/"/>
     <id>http://zhangyi5628.github.io/2016/10/19/修复打开弹窗后触摸屏幕有覆盖高亮颜色问题（-webkit-tap-highlight-color）/</id>
     <published>2016-10-19T01:08:49.000Z</published>
-    <updated>2017-11-19T01:12:42.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h3&gt;&lt;p&gt;最近在做Html5弹窗组件（Modal）的时候，发现在弹窗打开后触摸屏幕时全屏会被覆盖半透明的灰色背景，着实让我摸不着头脑，后来查看Antd Design Mobile组件库源码时候发现了解决方法。原来是需要设置-webkit-tap-highlight-color 属性&lt;/p&gt;
 &lt;h3 id=&quot;webkit-tap-highlight-color&quot;&gt;&lt;a href=&quot;#webkit-tap-highlight-color&quot; class=&quot;headerlink&quot; title=&quot;-webkit-tap-highlight-color&quot;&gt;&lt;/a&gt;-webkit-tap-highlight-color&lt;/h3&gt;&lt;p&gt;这个属性只用于iOS (iPhone和iPad)。当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景。要重设这个表现，你可以设置-webkit-tap-highlight-color为任何颜色。&lt;br&gt;想要禁用这个高亮，设置颜色的alpha值为0即可&lt;br&gt;大部分android手机也是支持的，只是显示效果有所不同。&lt;/p&gt;
@@ -76,7 +107,7 @@
     <link href="http://zhangyi5628.github.io/2016/08/30/%E4%B8%80%E4%B8%AA%E5%89%8D%E7%AB%AF%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/"/>
     <id>http://zhangyi5628.github.io/2016/08/30/一个前端的自我修养/</id>
     <published>2016-08-30T05:45:38.000Z</published>
-    <updated>2016-08-30T06:50:02.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;转自：寒泉 [&lt;a href=&quot;http://kb.cnblogs.com/page/545784/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个前端的自我修养&lt;/a&gt;]&lt;br&gt;　　今天给大家分享的主题是前端的自我成长，这是一个关于成长的话题。&lt;br&gt;　　很多人都有这样的感觉：听了很多技术圈子的分享，有的有深度，有的循循善诱，深入浅出，但是呢，几年下来，到底哪些用上了，哪些对自己真的有帮助了?反而有些模糊。&lt;br&gt;　　2015 年我在不同的场合分享了很多内容：有移动端的性能、有适配、有 Web vs Native，也有 hybrid，但是其实我一直比较担心，真正有深度的内容，其实面向的是比较小众的群体，比如说 Hybrid，其实它在大部分公司里面，是只能用现成的。&lt;br&gt;　　所以我这一次尝试分享一个我认为可以帮助到所有前端的话题，关于前端的成长，如果说这个分享的内容，听众里面有那么几十个人拿到 BAT 的 offer，或者升职加薪，那么我觉得我就认为我取得了成功。&lt;br&gt;　　前端其实是个特别苦逼的职业，因为前端技术一直革命的特别快，新技术、新技巧在不断地被发明出来。之前我有一个朋友，他讲说他对自己的认知是了解前端、熟悉前端、精通前端、熟悉前端、不懂前端。为什么呢，他说当他觉得自己对前端所有的东西觉得无所不知，无所不能的时候，忽然看到了一段代码，他完全无法理解，于是整个世界就崩塌了，从此再也不敢说自己会前端。&lt;br&gt;　　我就跟他说，这里，缺少的是一种正确的方法，你觉得无所不知、无所不能的标准是什么，是工作中很久没遇到解决不了的问题么？他说还真是这样。我就又问他，那你系统学过前端么？他想了想，还真没学过，大学里不开这个课。的确如此，到目前为止，还没有任何一个大学会教前端，倒是有些培训班，会讲网页开发三剑客。&lt;br&gt;　　我这里讲的内容，希望带给大家的，就是该如何学习前端，实现自身成长。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1CPRlMXXXXXafaXXXXXXXXXXX-826-222.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　关于成长，首先我得发一个免责声明，不是我对我讲的内容没有信心，而是成长是自己的事，英文有句话，在外企工作的人会经常听到，叫做：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;You are the owner of your career.&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;　　你是你职业发展的责任人。这句话潜台词是，你（不是你老板，也不是你爸妈，也不是你女朋友）是你职业发展的责任人。&lt;br&gt;　　这句话我在我职业生涯的起点听说，一直指导我的职业发展，甚至在我带团队，培养团队的时候，也是中心的指导思想，之前我带的团队的同学，他们有不少人也在带团队，其实他们也在实践这句话，所以我这里，也把这句话、把这个道理分享给给大家。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1L5FfMXXXXXXaapXXXXXXXXXX-1501-789.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　我们讲前端成长，&lt;strong&gt;我认为，主要在两个方面，一部分是“能力”，一部分是“知识”&lt;/strong&gt;。我个人的观点，能力占百分之八十，知识占百分之二十。&lt;br&gt;　　从这个图上，大家可以看到，其实我们认为变化快的东西，最新出来的 Angular、React、ES2015，其实都在知识里面，知识又分成两部分，一部分我把它叫做标准，它是相对而言比较稳定的，很少会出现一个标准被推翻的事情。另一部分则是技术，像是 jQuery、React 这些框架啦，像是 MVC、FLUX 这些架构的东西，这些东西是由各个公司主导的，变化就非常快，你看 Grunt 发展了没多久，Gulp 就来挑战他了，然后又有 browserify、webpack 这些东西。&lt;br&gt;　　而我认为占重点的能力，则是非常稳定的，我认为能力是三大块：编程能力、架构能力、工程能力。&lt;br&gt;　　编程能力，就是用代码解决问题的能力，你编程能力越强，就能解决越复杂的问题，细分又有调试、算法、数据结构、OS 原理等这些的支撑，你才能解决各种麻烦的问题。&lt;br&gt;　　架构能力，则是解决代码规模的问题，当一个系统足够复杂，你会写每一块，能解决每一个问题，不等于你能搞定整个系统，这就需要架构能力，架构能力包含了一些意识，比如解耦、接口隔离，也包含认识业务建立抽象模型，也有一些常见的模式，比如经典的 MVC，还有设计层面，面向对象、设计模式等等。&lt;br&gt;　　最后工程能力，则是解决协作的问题，当系统规模更大，光靠一个人，是没办法完成的，如何保证几个高手互相能够配合好？如何保证项目里面水平最差的人不拖后腿？这个工程化建设，往往会跨越多个业务，以汇报关系上的团队为单位来做。包括前后端解耦，模块化，质量保证，代码风格，等等。&lt;br&gt;　　其实不难看出来，这三项，其实是有顺序的，低等级、小团队，编程能力一项就能应付，越资深的前端，越大的公司和团队，越是需要后面的技能，但是这里我要强调一点，其实资深前端，大团队，对能力的需求，是既要还要——不是说资深的前端，编程能力就可以变差。&lt;br&gt;　　社区总会有一些声音，对工程能力，对架构能力持有一种抵触的态度，觉得比较虚，觉得不需要。实际上以某些人所在的岗位来说，也没错，毕竟公司、团队的状态确实可能用不到，但是以个人成长的角度来看，就是大错特错。&lt;br&gt;&lt;img src=&quot;http://gw.alicdn.com/bao/uploaded/TB1L9VmMXXXXXc0XVXXXXXXXXXX-1729-990.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;　　下面我们来具体讲讲，关于知识的学习。&lt;br&gt;　　对知识，我一直有个观点，叫做宁缺毋滥，这个图片上写了一句好前端才分对错，是的，其实很多人，他学习东西的时候就喜欢挑，挑简单的学，书选择最”深入浅出”的，在这种心态下，没有任何一丝学好的可能性，所以我对知识学习的目标，理解为亮点，一曰准确，二曰全面。当年学习一部分知识，如果你能做到这两点，那你将来在业务上做技术决策的时候，你面对面试官技术问题的时候，信心跟你只看过皮毛是完全不一样的。&lt;br&gt;　　怎么做到这两点呢？我想路子肯定有很多，而我的答案，我这里要分享的，是“建立自己的知识体系”。&lt;br&gt;　　如何建立自己的知识体系呢？我个人总结的经验，是下面几个步骤：&lt;/p&gt;
@@ -103,7 +134,7 @@
     <link href="http://zhangyi5628.github.io/2016/08/03/web%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E6%96%B9%E6%B3%95/"/>
     <id>http://zhangyi5628.github.io/2016/08/03/web移动端开发调试方法/</id>
     <published>2016-08-03T03:44:58.000Z</published>
-    <updated>2016-08-03T03:46:39.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;web移动端开发调试方法&lt;br&gt;&lt;a href=&quot;http://blog.devtang.com/2015/11/14/charles-introduction/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Charles 从入门到精通&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -127,7 +158,7 @@
     <link href="http://zhangyi5628.github.io/2016/07/29/ES6-%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E4%BA%8B-%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
     <id>http://zhangyi5628.github.io/2016/07/29/ES6-你可能不知道的事-基础篇/</id>
     <published>2016-07-29T08:01:43.000Z</published>
-    <updated>2016-07-29T08:20:54.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;转载之前先贴一个ES6语法文档&lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://es6.ruanyifeng.com/&lt;/a&gt;&lt;br&gt;转自：&lt;a href=&quot;http://taobaofed.org/blog/2016/07/22/es6-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ES6 你可能不知道的事 - 基础篇&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;序&quot;&gt;&lt;a href=&quot;#序&quot; class=&quot;headerlink&quot; title=&quot;序&quot;&gt;&lt;/a&gt;序&lt;/h2&gt;&lt;p&gt;ES6，或许应该叫 ES2015（2015 年 6 月正式发布），对于大多数前端同学都不陌生。&lt;br&gt;首先这篇文章不是工具书，不会去过多谈概念，而是想聊聊关于每个特性 你可能不知道的事，希望能为各位同学 正确使用 ES6，提供一些指导。&lt;br&gt;对于 ES6，有些同学已经在项目中有过深入使用了，有些则刚刚开始认识他，但不论你是属于哪一类，相信这篇文章都有适合你的部分。针对文章中的问题或不同意见，欢迎随时拍砖、指正。&lt;/p&gt;
@@ -191,7 +222,7 @@
     <link href="http://zhangyi5628.github.io/2016/07/26/%E5%B8%B8%E7%94%A8-Git-%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/"/>
     <id>http://zhangyi5628.github.io/2016/07/26/常用-Git-命令清单/</id>
     <published>2016-07-26T10:49:18.000Z</published>
-    <updated>2016-07-27T00:48:36.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;转自：阮一峰 [&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用 Git 命令清单&lt;/a&gt;]&lt;/p&gt;
 &lt;p&gt;我每天使用 Git ，但是很多命令记不住。&lt;br&gt;一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。&lt;br&gt;&lt;img src=&quot;http://www.ruanyifeng.com/blogimg/asset/2015/bg2015120901.png&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
@@ -233,7 +264,7 @@
     <link href="http://zhangyi5628.github.io/2016/07/18/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E5%A6%82%E4%BD%95%E9%80%89%E7%94%A8%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/"/>
     <id>http://zhangyi5628.github.io/2016/07/18/前端开发中如何选用图片格式/</id>
     <published>2016-07-18T09:40:38.000Z</published>
-    <updated>2016-07-18T11:26:40.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;一-图像术语&quot;&gt;&lt;a href=&quot;#一-图像术语&quot; class=&quot;headerlink&quot; title=&quot;一.图像术语&quot;&gt;&lt;/a&gt;一.图像术语&lt;/h2&gt;&lt;h3 id=&quot;图形和照片&quot;&gt;&lt;a href=&quot;#图形和照片&quot; class=&quot;headerlink&quot; title=&quot;图形和照片&quot;&gt;&lt;/a&gt;图形和照片&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;图形&lt;ul&gt;
@@ -430,7 +461,7 @@
     <link href="http://zhangyi5628.github.io/2016/06/07/input-type-file-accept%E4%B8%AD%E5%8F%AF%E4%BB%A5%E9%99%90%E5%88%B6%E5%8F%AF%E9%80%89%E7%9A%84%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B/"/>
     <id>http://zhangyi5628.github.io/2016/06/07/input-type-file-accept中可以限制可选的文件类型/</id>
     <published>2016-06-07T08:35:55.000Z</published>
-    <updated>2016-06-07T09:08:28.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;在上传文件的时候，通过accept属性可以限制可选文件的类型，当设置改属性是，可以让用户在浏览上传文件时，只能选择指定的文件类型。那么不同的文件类型，accept值应该如何设置了？&lt;br&gt;见下表：&lt;/p&gt;
 &lt;table&gt;
@@ -525,7 +556,7 @@
     <link href="http://zhangyi5628.github.io/2016/05/21/webpack-config%E9%85%8D%E7%BD%AE%E7%AE%80%E4%BB%8B/"/>
     <id>http://zhangyi5628.github.io/2016/05/21/webpack-config配置简介/</id>
     <published>2016-05-21T01:06:36.000Z</published>
-    <updated>2016-05-21T02:16:27.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;本文只对webpack的一些简单配置（webpack.config.js）做介绍，并不深究。&lt;/p&gt;
 &lt;h3 id=&quot;webpack是什么&quot;&gt;&lt;a href=&quot;#webpack是什么&quot; class=&quot;headerlink&quot; title=&quot;webpack是什么&quot;&gt;&lt;/a&gt;webpack是什么&lt;/h3&gt;&lt;p&gt;webpack 简单说就是模块加载器。在webpack中，所有的资源文件如js,css,图片等都看作是模块。&lt;br&gt;webpack 支持AMD,CommonJs以及ES6语法的模块加载系统。&lt;/p&gt;
@@ -559,7 +590,7 @@
     <link href="http://zhangyi5628.github.io/2016/05/21/Mac-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>http://zhangyi5628.github.io/2016/05/21/Mac-常用快捷键/</id>
     <published>2016-05-21T00:18:23.000Z</published>
-    <updated>2016-05-21T01:05:14.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;收集Max OS X系统常用快捷键&lt;/p&gt;
 &lt;h3 id=&quot;一、OS-X系统常用快捷键&quot;&gt;&lt;a href=&quot;#一、OS-X系统常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;一、OS X系统常用快捷键&quot;&gt;&lt;/a&gt;一、OS X系统常用快捷键&lt;/h3&gt;&lt;p&gt;command+control+f: 进入或退出全屏模式&lt;br&gt;command+m: 最小化窗口&lt;/p&gt;
@@ -587,7 +618,7 @@
     <link href="http://zhangyi5628.github.io/2016/05/13/Http%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B%E7%AE%80%E4%BB%8B/"/>
     <id>http://zhangyi5628.github.io/2016/05/13/Http请求流程简介/</id>
     <published>2016-05-13T06:37:09.000Z</published>
-    <updated>2016-05-13T07:58:47.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;最近看了“&lt;a href=&quot;http://www.linux178.com/web/httprequest.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一次完整的HTTP事务是怎样一个过程？&lt;/a&gt;”这篇博客深有感触，就想做个总结，把对于前端来说更重要的部分做个摘录。&lt;br&gt;HTTP属于TCP/IP模型中的应用层协议, TCP协议实现了数据流的传输。然而，人们更加习惯以文件为单位传输资源，比如文本文件，图像文件，超文本文档(hypertext document)。&lt;br&gt;超文本文档中包含有超链接，指向其他的资源。超文本文档是万维网(World Wide Web，即www)的基础。&lt;br&gt;HTTP协议解决文件传输的问题。HTTP是应用层协议，主要建立在TCP协议之上(偶尔也可以UDP为底层)。&lt;/p&gt;
 &lt;h3 id=&quot;一次完整的HTTP请求的流程大体是这样：&quot;&gt;&lt;a href=&quot;#一次完整的HTTP请求的流程大体是这样：&quot; class=&quot;headerlink&quot; title=&quot;一次完整的HTTP请求的流程大体是这样：&quot;&gt;&lt;/a&gt;一次完整的HTTP请求的流程大体是这样：&lt;/h3&gt;&lt;p&gt;域名解析 —&amp;gt; 发起TCP的3次握手 —&amp;gt; 建立TCP连接后发起HTTP请求 —&amp;gt; 服务器响应HTTP请求 —&amp;gt;浏览器接收到Html代码 —&amp;gt; 浏览器解析Html代码，并请求html代码中的资源（js、css、image等）—&amp;gt;浏览器对页面进行渲染呈现给用户&lt;/p&gt;
@@ -620,7 +651,7 @@
     <link href="http://zhangyi5628.github.io/2016/05/13/%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%88%86%E4%BA%AB/"/>
     <id>http://zhangyi5628.github.io/2016/05/13/非常棒的技术博客分享/</id>
     <published>2016-05-13T05:40:44.000Z</published>
-    <updated>2017-02-06T08:12:23.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;分享、记录一些我所看过很棒的技术博客  &lt;/p&gt;
 &lt;h3 id=&quot;1-一次完整的HTTP事务是怎样一个过程？&quot;&gt;&lt;a href=&quot;#1-一次完整的HTTP事务是怎样一个过程？&quot; class=&quot;headerlink&quot; title=&quot;1.一次完整的HTTP事务是怎样一个过程？&quot;&gt;&lt;/a&gt;1.&lt;a href=&quot;http://www.linux178.com/web/httprequest.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一次完整的HTTP事务是怎样一个过程？&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&quot;2-剖析Vue原理-amp-实现双向绑定MVVM？&quot;&gt;&lt;a href=&quot;#2-剖析Vue原理-amp-实现双向绑定MVVM？&quot; class=&quot;headerlink&quot; title=&quot;2.剖析Vue原理&amp;amp;实现双向绑定MVVM？&quot;&gt;&lt;/a&gt;2.&lt;a href=&quot;https://segmentfault.com/a/1190000006599500&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;剖析Vue原理&amp;amp;实现双向绑定MVVM？&lt;/a&gt;&lt;/h3&gt;</content>
@@ -646,7 +677,7 @@
     <link href="http://zhangyi5628.github.io/2016/05/08/Array%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%B8%80/"/>
     <id>http://zhangyi5628.github.io/2016/05/08/Array的方法详解一/</id>
     <published>2016-05-08T08:20:25.000Z</published>
-    <updated>2016-05-13T03:11:02.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;闲来无事，把js中数组的方法给整理下，发现自己很多方法不常用，容易忘记这些方法具体是做什么的。另外也给自己的博客充实点内容。&lt;br&gt;js中的Array比较奇怪，和java等其他语言相比，js中的数组每一项可以保存任何类型的数据，而且数组的发现是可以动态调整的，即可以随着数据的添加自动增长以容纳新增数据。数组的length属性也很特别，它不是只读的，因此通过设置length属性，可以做到向数组的末尾移除或添加新元素。&lt;br&gt;js中所有的对象都具有toLocaleString()、toString()、valueOf()三个方法，数组也不例外。&lt;/p&gt;
 &lt;h3 id=&quot;二、索引&quot;&gt;&lt;a href=&quot;#二、索引&quot; class=&quot;headerlink&quot; title=&quot;二、索引&quot;&gt;&lt;/a&gt;二、索引&lt;/h3&gt;&lt;p&gt;1.&lt;a href=&quot;#push&quot;&gt;push&lt;/a&gt;&lt;br&gt;2.&lt;a href=&quot;#pop&quot;&gt;pop&lt;/a&gt;&lt;br&gt;3.&lt;a href=&quot;#shift&quot;&gt;shift&lt;/a&gt;&lt;br&gt;4.&lt;a href=&quot;#unshift&quot;&gt;unshift&lt;/a&gt;&lt;br&gt;5.&lt;a href=&quot;#reverse&quot;&gt;reverse&lt;/a&gt;&lt;br&gt;6.&lt;a href=&quot;#sort&quot;&gt;sort&lt;/a&gt;&lt;br&gt;7.&lt;a href=&quot;#concat&quot;&gt;concat&lt;/a&gt;&lt;br&gt;8.&lt;a href=&quot;#slice&quot;&gt;slice&lt;/a&gt;&lt;br&gt;9.&lt;a href=&quot;#splice&quot;&gt;splice&lt;/a&gt;&lt;br&gt;10.&lt;a href=&quot;#join&quot;&gt;join&lt;/a&gt;&lt;/p&gt;
@@ -685,7 +716,7 @@
     <link href="http://zhangyi5628.github.io/2016/04/22/javascript-Array%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BA%8C%EF%BC%88ES5%E4%B8%AD%E7%9A%84Array%E6%96%B9%E6%B3%95%EF%BC%89/"/>
     <id>http://zhangyi5628.github.io/2016/04/22/javascript-Array方法详解二（ES5中的Array方法）/</id>
     <published>2016-04-22T10:43:17.000Z</published>
-    <updated>2017-03-24T08:48:11.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;ES5中新增了许多Array的方法，巧用这些方法能够很好的提示代码质量和性能，自己之前也经常忘记这些方法的用法，所以写一写巩固一下。&lt;/p&gt;
 &lt;h3 id=&quot;二、索引&quot;&gt;&lt;a href=&quot;#二、索引&quot; class=&quot;headerlink&quot; title=&quot;二、索引&quot;&gt;&lt;/a&gt;二、索引&lt;/h3&gt;&lt;p&gt;ES5中新增的数组方法如下：&lt;br&gt;1.&lt;a href=&quot;#isArray&quot;&gt;isArray&lt;/a&gt;&lt;br&gt;2.&lt;a href=&quot;#indexOf&quot;&gt;indexOf&lt;/a&gt;&lt;br&gt;3.&lt;a href=&quot;#lastIndexOf&quot;&gt;lastIndexOf&lt;/a&gt;&lt;br&gt;4.&lt;a href=&quot;#every&quot;&gt;every&lt;/a&gt;&lt;br&gt;5.&lt;a href=&quot;#some&quot;&gt;some&lt;/a&gt;&lt;br&gt;6.&lt;a href=&quot;#forEach&quot;&gt;forEach&lt;/a&gt;&lt;br&gt;7.&lt;a href=&quot;#map&quot;&gt;map&lt;/a&gt;&lt;br&gt;8.&lt;a href=&quot;#filter&quot;&gt;filter&lt;/a&gt;&lt;br&gt;9.&lt;a href=&quot;#reduce&quot;&gt;reduce&lt;/a&gt;&lt;br&gt;10.&lt;a href=&quot;#reduceRight&quot;&gt;reduceRight&lt;/a&gt;&lt;/p&gt;
@@ -737,7 +768,7 @@
     <link href="http://zhangyi5628.github.io/2016/04/06/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9Bjs%E7%AC%94%E8%AF%95%E9%A2%98/"/>
     <id>http://zhangyi5628.github.io/2016/04/06/最近面试遇到的一些js笔试题/</id>
     <published>2016-04-06T10:28:10.000Z</published>
-    <updated>2016-04-08T07:41:48.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;h4 id=&quot;1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&quot;&gt;&lt;a href=&quot;#1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&quot; class=&quot;headerlink&quot; title=&quot;1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&quot;&gt;&lt;/a&gt;1、随机给出一个字符串，例如：adadfdfseffserfefsefsee，找出出现次数最多的字母。&lt;/h4&gt;&lt;p&gt;这道题有两种做法，&lt;br&gt;第一种方法是创建一个object，循环字符以字符为object的key，初始的value为1，循环的过程中，遇到同样的字符，就+1，最后得到的时类似于这样的对象：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;a&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;b&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;attr&quot;&gt;c&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    ...&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;在对这个对象的每个key和value做排序。当然这种方法不好，要做几遍循环，比较消耗性能。  &lt;/p&gt;
@@ -766,7 +797,7 @@
     <link href="http://zhangyi5628.github.io/2016/04/03/Mac-OS-X-Yosemite-10-10%E4%B8%8B%E9%85%8D%E7%BD%AE-Apache/"/>
     <id>http://zhangyi5628.github.io/2016/04/03/Mac-OS-X-Yosemite-10-10下配置-Apache/</id>
     <published>2016-04-03T10:26:18.000Z</published>
-    <updated>2016-04-07T00:10:55.000Z</updated>
+    <updated>2017-11-19T01:19:05.000Z</updated>
     
     <content type="html">&lt;p&gt;花了两个晚上休息时间才把Apache给配置好。虽然Mac系统已经集成了Apache+PHP环境，但是不同的系统版本配置还不一样。之前网上找到的配置教程大多是针对老版本的Mac OS X系统。花了很多时间按照网上搜索到的多个资料进行配置却一直不成功，这对我们不是这种前端开发人员来说也是挺头疼的，自己毕竟也是第一次配置Apache。&lt;/p&gt;
 &lt;h3 id=&quot;一、启动Apache&quot;&gt;&lt;a href=&quot;#一、启动Apache&quot; class=&quot;headerlink&quot; title=&quot;一、启动Apache&quot;&gt;&lt;/a&gt;一、启动Apache&lt;/h3&gt;&lt;p&gt;在终端中输入命令，启动Apache&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ sudo apachectl start&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
