@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyi5628.github.io/"/>
-  <updated>2017-11-24T13:31:27.000Z</updated>
+  <updated>2017-11-24T13:45:51.000Z</updated>
   <id>http://zhangyi5628.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>touch-action控制触摸操作</title>
+    <link href="http://zhangyi5628.github.io/2017/11/24/touch-action%E6%8E%A7%E5%88%B6%E8%A7%A6%E6%91%B8%E6%93%8D%E4%BD%9C/"/>
+    <id>http://zhangyi5628.github.io/2017/11/24/touch-action控制触摸操作/</id>
+    <published>2017-11-24T13:45:31.000Z</published>
+    <updated>2017-11-24T13:45:51.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;touch-action&quot;&gt;&lt;a href=&quot;#touch-action&quot; class=&quot;headerlink&quot; title=&quot;touch-action&quot;&gt;&lt;/a&gt;touch-action&lt;/h4&gt;&lt;p&gt;CSS属性 touch-action 用于指定某个给定的区域是否允许用户操作，以及如何响应用户操作，用于控制元素的默认触摸行为。  &lt;/p&gt;
+&lt;p&gt;常用的 touch-action 值：&lt;br&gt;|  触摸操作参数 | 描述&lt;br&gt;| ——– | ————- |&lt;br&gt;| touch-action: none | 浏览器将不处理触摸交互。 |&lt;br&gt;| touch-action: pinch-zoom | 像 &lt;code&gt;touch-action: none&lt;/code&gt; 一样停用所有浏览器交互（ &lt;code&gt;pinch-zoom&lt;/code&gt; 除外，该交互仍由浏览器处理。 |&lt;br&gt;| touch-action: pan-y pinch-zoom | touch-action: pan-y pinch-zoom |&lt;br&gt;| touch-action: manipulation |  停用点按两次手势，可避免浏览器的任何点按延迟。 将滚动和双指张合缩放交由浏览器处理。 |&lt;/p&gt;
+&lt;p&gt;touch-action: none 来防止浏览器在用户触摸时执行任何操作，从而拦截所有触摸事件。&lt;br&gt;使用 touch-action: none 的影响颇为巨大，因为它会阻止所有默认的浏览器行为。 在许多情况下，采用下面其中一个解决方案是更好的选择。&lt;/p&gt;
+&lt;p&gt;touch-action 可停用浏览器实现的手势。例如，IE10 以上版本支持点按两次执行缩放手势。 将 touch-action 设置为 manipulation 可以阻止点按两次的默认行为。&lt;/p&gt;
+&lt;p&gt;这样您就可以自行实现点按两次手势。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;touch-action&quot;&gt;&lt;a href=&quot;#touch-action&quot; class=&quot;headerlink&quot; title=&quot;touch-action&quot;&gt;&lt;/a&gt;touch-action&lt;/h4&gt;&lt;p&gt;CSS属性 touch-action 用于指定某个给定的区域
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="http://zhangyi5628.github.io/tags/HTML5/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS Safari 真机调试网页</title>
